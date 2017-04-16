@@ -45,34 +45,45 @@ public abstract class Document {
 	// This is a helper function that returns the number of syllables
 	// in a word.  You should write this and use it in your 
 	// BasicDocument class.
-	protected static int countSyllables(String word)
+	// You will probably NOT need to add a countWords or a countSentences method
+	// here.  The reason we put countSyllables here because we'll use it again
+	// next week when we implement the EfficientDocument class.
+	protected int countSyllables(String word)
 	{
-// TODO: Implement this method so that you can call it from the 
+		// TODO: Implement this method so that you can call it from the 
 	    // getNumSyllables method in BasicDocument (module 1) and 
 	    // EfficientDocument (module 2).
-	    //System.out.print("Counting syllables in " + word + "...");
-		int numSyllables = 0;
-		boolean newSyllable = true;
-		String vowels = "aeiouy";
-		char[] cArray = word.toCharArray();
-		for (int i = 0; i < cArray.length; i++)
-		{
-		    if (i == cArray.length-1 && Character.toLowerCase(cArray[i]) == 'e' 
-		    		&& newSyllable && numSyllables > 0) {
-                numSyllables--;
-            }
-		    if (newSyllable && vowels.indexOf(Character.toLowerCase(cArray[i])) >= 0) {
-				newSyllable = false;
-				numSyllables++;
+		char[] vowels = {'a', 'e', 'i', 'o', 'u', 'y'};
+		int num = 0;
+		int i;
+		for(i = 0; i < word.length(); i++) {
+			if(i > 0) {
+			    if(!contains(vowels, Character.toLowerCase(word.charAt(i - 1))) &&
+			    		contains(vowels, Character.toLowerCase(word.charAt(i)))) {
+				   num++;
+			    }
 			}
-			else if (vowels.indexOf(Character.toLowerCase(cArray[i])) < 0) {
-				newSyllable = true;
+			else if(contains(vowels, Character.toLowerCase(word.charAt(i)))){
+				num++;
 			}
 		}
-		//System.out.println( "found " + numSyllables);
-		return numSyllables;
+		// now i == word.length, word.charAt(i - 2) is the second last char
+		// the case in which i == word.length == 1 need to be handled
+		if(word.length() > 1 && word.endsWith("e") && !contains(vowels, Character.toLowerCase(word.charAt(i - 2)))
+		   && num > 1) {
+			num--;
+		}
+	    return num;
 	}
 	
+	protected boolean contains(char[] vowels, char c) {
+		for(char ch : vowels) {
+			if(ch == c) {
+				return true;
+			}
+		}
+		return false;
+	}
 	/** A method for testing
 	 * 
 	 * @param doc The Document object to test
@@ -133,11 +144,8 @@ public abstract class Document {
 	/** return the Flesch readability score of this document */
 	public double getFleschScore()
 	{
-// TODO: Implement this method
-		double wordCount = (double)getNumWords();
-		return 206.835 - (1.015 * ((wordCount)/getNumSentences())) 
-				- (84.6 * (((double)getNumSyllables())/wordCount));
-	
+	    // TODO: Implement this method
+	    return 206.835 - 1.015 * getNumWords() / getNumSentences() - 84.6 * getNumSyllables() / getNumWords();
 	}
 	
 	
