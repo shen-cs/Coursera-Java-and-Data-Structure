@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=seed
+comment0.target=void\ runMarkovZero(int)
+comment1.params=n\ seed
+comment1.target=void\ runMarkovModel(int,\ int)
+comment2.params=s
+comment2.target=void\ printOut(java.lang.String)
+numComments=3

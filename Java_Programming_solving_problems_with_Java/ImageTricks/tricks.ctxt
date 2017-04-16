@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=image\ n
+comment0.target=edu.duke.ImageResource\ enlarge(edu.duke.ImageResource,\ int)
+comment1.params=n
+comment1.target=void\ enlargeAndSave(int)
+comment2.params=image\ newHeight\ newWidth
+comment2.target=edu.duke.ImageResource\ chop(edu.duke.ImageResource,\ int,\ int)
+comment3.params=newHeight\ newWidth
+comment3.target=void\ chopAndSave(int,\ int)
+comment4.params=pixel
+comment4.target=edu.duke.Pixel\ chop2hide(edu.duke.Pixel)
+comment5.params=pixel
+comment5.target=edu.duke.Pixel\ shift(edu.duke.Pixel)
+comment6.params=im2show\ im2hide
+comment6.target=edu.duke.ImageResource\ encrypt(edu.duke.ImageResource,\ edu.duke.ImageResource)
+comment7.params=
+comment7.target=void\ encryptAndSave()
+comment8.params=image\ newWidth\ newHeight
+comment8.target=edu.duke.ImageResource\ fillImage(edu.duke.ImageResource,\ int,\ int)
+comment9.params=
+comment9.target=void\ decrypt()
+numComments=10

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=k
+comment0.target=CaesarCipherViaFiles(int)
+comment1.params=k
+comment1.target=void\ setKey(int)
+comment2.params=
+comment2.target=void\ encryptViaFile()
+comment3.params=
+comment3.target=void\ decryptWithKeyViaFile()
+comment4.params=
+comment4.target=void\ decryptWithoutKeyViaFile()
+comment5.params=key1\ key2
+comment5.target=void\ encryptTwoKeysViaFile(int,\ int)
+comment6.params=
+comment6.target=void\ decryptTwoKeysWithoutViaFile()
+numComments=7

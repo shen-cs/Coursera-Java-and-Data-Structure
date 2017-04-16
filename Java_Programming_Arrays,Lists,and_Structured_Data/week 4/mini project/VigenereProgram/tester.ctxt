@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=key
+comment0.target=void\ CCencryptViaFile(int)
+comment1.params=
+comment1.target=void\ CCdecryptViaFile()
+comment2.params=key
+comment2.target=void\ VencryptViaFile(java.lang.String)
+numComments=3

@@ -1,0 +1,10 @@
+Dear Jessica, 
+        This letter is written to share with you an insecure but historical and intriguing way to encrypt a message called Caesar Cipher, which dates back to the 1st century B.C.,  named after the Roman dictator Julius Caesar. You can google it or find it on wikipedia for the details of this cryptography, though I think you've already done it to see this letter:) Caesar Cipher, however, is a vulnerable means to hide message because it's quite easy to break if the message is protected with just one key. In fact, I've implemented codes to encrypt information with two keys and a way to decrypt it. That's why I can translate this letter into a cryptogram in the blink of an eye. Hope you find it interesting as I do.
+
+        Another thing, here's the benefits of becoming a morning person. 
+http://time.com/4152747/how-became-morning-person
+This article inspired me and also some of my friends. Hope you share the same feeling with us and start making your life better actively after reading it. Anyway, have a nice day and live your life to the FULLEST!
+
+Sincerely,
+
+Shen Chang-Shao

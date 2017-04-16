@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=inImage
+comment0.target=edu.duke.ImageResource\ makeGray(edu.duke.ImageResource)
+comment1.params=
+comment1.target=void\ selectAndConvert()
+comment2.params=
+comment2.target=void\ testGray()
+comment3.params=
+comment3.target=void\ selectAndConvertAndSave()
+numComments=4

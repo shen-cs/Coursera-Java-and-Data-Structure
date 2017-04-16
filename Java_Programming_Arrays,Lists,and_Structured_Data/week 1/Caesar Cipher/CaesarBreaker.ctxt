@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=input\ k
+comment0.target=java.lang.String\ decryptWithKey(java.lang.String,\ int)
+comment1.params=encrypted
+comment1.target=java.lang.String\ decryptWithoutKey(java.lang.String)
+comment2.params=k
+comment2.target=void\ setKey(int)
+comment3.params=s
+comment3.target=int\ getKey(java.lang.String)
+comment4.params=input
+comment4.target=int[]\ countLetterOf(java.lang.String)
+comment5.params=counts
+comment5.target=int\ maxIndexOf(int[])
+numComments=6
